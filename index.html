@@ -1,0 +1,546 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Portfólio de Thiago Gomes Araújo — Analista de Cibersegurança (SOC N1) em transição de carreira, com background em Infraestrutura de TI, Redes e Suporte Técnico." />
+  <meta property="og:title" content="Thiago Gomes Araújo — Analista de Cibersegurança | SOC N1" />
+  <meta property="og:description" content="Infraestrutura, Redes, Blue Team e SOC. Certificações AWS, FIAP e Cisco Networking Academy." />
+  <title>Thiago Araújo — Analista de Cibersegurança | SOC N1</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ═══════════════════ NAVEGAÇÃO ═══════════════════ -->
+  <nav class="nav" id="nav">
+    <div class="nav-inner">
+      <a href="#/home" class="nav-logo">thiago@araujo:~$</a>
+
+      <ul class="nav-links" id="nav-links" role="menubar">
+        <li role="none"><a href="#/home"     class="nav-link" data-route="home"     role="menuitem">~/home</a></li>
+        <li role="none"><a href="#/sobre"    class="nav-link" data-route="sobre"    role="menuitem">~/sobre</a></li>
+        <li role="none"><a href="#/skills"   class="nav-link" data-route="skills"   role="menuitem">~/skills</a></li>
+        <li role="none"><a href="#/projetos" class="nav-link" data-route="projetos" role="menuitem">~/projetos</a></li>
+        <li role="none"><a href="#/contato"  class="nav-link" data-route="contato"  role="menuitem">~/contato</a></li>
+      </ul>
+
+      <button class="nav-burger" id="nav-burger" aria-label="Abrir menu" aria-expanded="false" aria-controls="nav-links">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <div id="root">
+
+    <!-- ═══════════════════ HOME ═══════════════════ -->
+    <main class="page-view" data-page="home" id="page-home">
+      <section class="hero" aria-label="Apresentação">
+        <div class="container">
+          <div class="hero-inner">
+            <div>
+              <div class="hero-label anim-1">[ Disponível para oportunidades ]</div>
+
+              <h1 class="hero-name anim-2">
+                Olá, sou <span>Thiago</span><br />Araújo
+              </h1>
+
+              <div class="hero-typing-wrapper anim-3" aria-live="polite">
+                <span class="hero-typing-prefix" aria-hidden="true">$ objetivo=</span>
+                <span class="hero-typing-text" id="typing-text" data-words='["Analista de Cibersegurança – SOC N1","Blue Team Analyst","Analista de Segurança da Informação","SOC Analyst N1"]'></span>
+                <span class="hero-typing-cursor" aria-hidden="true"></span>
+              </div>
+
+              <p class="hero-description anim-4">
+                Profissional de TI com <strong style="color:var(--color-text-primary)">mais de 8 anos de experiência</strong>
+                em Infraestrutura, Redes e Suporte Técnico, em transição para Cibersegurança com foco em operações de SOC.
+                Baseado em
+                <span style="color:var(--color-accent); font-family:var(--font-mono); font-size:0.9em;">Americana/SP, Brasil</span>.
+              </p>
+
+              <div class="hero-actions anim-5">
+                <a class="btn btn-primary" href="#/projetos">Ver Projetos</a>
+                <a class="btn btn-outline" href="#/contato">Entrar em contato</a>
+                <a class="btn btn-ghost" href="#/sobre">Trajetória</a>
+              </div>
+            </div>
+
+            <div class="avatar-wrapper anim-1">
+              <div class="avatar-ring" aria-hidden="true"></div>
+              <div class="avatar-inner">
+                <svg style="position:absolute; inset:0; opacity:0.06" width="100%" height="100%" aria-hidden="true">
+                  <defs>
+                    <pattern id="grid" width="20" height="20" patternUnits="userSpaceOnUse">
+                      <path d="M 20 0 L 0 0 0 20" fill="none" stroke="#00d4ff" stroke-width="0.5" />
+                    </pattern>
+                  </defs>
+                  <rect width="100%" height="100%" fill="url(#grid)" />
+                </svg>
+                <span class="avatar-initials" aria-label="Thiago Gomes Araújo">TA</span>
+              </div>
+              <div class="avatar-dots" title="Disponível para oportunidades"></div>
+            </div>
+          </div>
+
+          <div class="metrics-grid fade-in" data-fade>
+            <div class="metric-card">
+              <div class="metric-value">8+</div>
+              <div class="metric-label">Anos de Experiência em TI</div>
+            </div>
+            <div class="metric-card">
+              <div class="metric-value">1</div>
+              <div class="metric-label">Certificação AWS</div>
+            </div>
+            <div class="metric-card">
+              <div class="metric-value">4</div>
+              <div class="metric-label">Projetos Open Source</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" style="border-top:1px solid var(--color-border)" aria-label="Experiências relevantes em destaque">
+        <div class="container">
+          <div class="section-header fade-in" data-fade>
+            <p class="section-label">// experiências relevantes</p>
+            <h2 class="section-title">O que <span>estou construindo</span></h2>
+            <div class="section-divider"></div>
+          </div>
+
+          <div class="projects-grid fade-in" data-fade style="margin-bottom:var(--space-3xl)" id="home-projects-preview"></div>
+
+          <div style="text-align:center">
+            <a class="btn btn-outline" href="#/projetos">Ver todas as experiências relevantes →</a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- ═══════════════════ SOBRE ═══════════════════ -->
+    <main class="page-view" data-page="sobre" id="page-sobre">
+      <div class="section">
+        <div class="container">
+
+          <div class="section-header fade-in" data-fade>
+            <p class="section-label">// sobre</p>
+            <h1 class="section-title">Trajetória <span>Profissional</span></h1>
+            <div class="section-divider"></div>
+          </div>
+
+          <div class="summary-box fade-in" data-fade>
+            <p style="font-size:1rem; color:var(--color-text-secondary); line-height:1.8; margin-bottom:var(--space-md)">
+              Profissional de TI com <strong style="color:var(--color-text-primary)">mais de 8 anos de experiência</strong>
+              em Infraestrutura, Redes e Suporte Técnico, em transição para Cibersegurança com foco em operações de SOC.
+              Experiência prática em administração de Active Directory, análise de logs, monitoramento de redes via SNMP,
+              troubleshooting de conectividade e firewall (OPNsense).
+            </p>
+            <p style="font-size:1rem; color:var(--color-text-secondary); line-height:1.8; margin-bottom:var(--space-md)">
+              Formação complementar em <strong style="color:var(--color-text-primary)">Cibersegurança (FIAP 120h)</strong>,
+              <strong style="color:var(--color-text-primary)"> Blue Team (Hackers do Bem, RNP)</strong>, cursos Cisco Networking
+              Academy (Segurança de Endpoint, Introdução à Cibersegurança) e Ethical Hacking. Conhecimento nos frameworks
+              <strong style="color:var(--color-accent)"> NIST Cybersecurity Framework</strong>,
+              <strong style="color:var(--color-accent)"> MITRE ATT&amp;CK</strong> e
+              <strong style="color:var(--color-accent)"> OWASP Top 10</strong>, além de conceitos de SIEM, EDR/EPP, Firewall,
+              IDS/IPS e controle de acesso (IAM, RBAC, RADIUS/TACACS+).
+            </p>
+            <p style="font-size:1rem; color:var(--color-text-secondary); line-height:1.8">
+              Inglês intermediário para leitura de documentação técnica.
+            </p>
+
+            <div style="margin-top:var(--space-xl); display:flex; align-items:center; gap:var(--space-md); flex-wrap:wrap">
+              <span style="font-family:var(--font-mono); font-size:0.8rem; color:var(--color-text-muted); display:flex; align-items:center; gap:6px">
+                📍 Americana/SP — Brasil
+              </span>
+              <span class="badge badge-green">⬤ &nbsp;Disponível para oportunidades</span>
+            </div>
+          </div>
+
+          <div class="fade-in" data-fade>
+            <div class="section-header">
+              <p class="section-label">// experiência</p>
+              <h2 class="section-title">Histórico de <span>Trabalho</span></h2>
+              <div class="section-divider"></div>
+            </div>
+
+            <div class="timeline" role="list" aria-label="Linha do tempo de experiências">
+
+              <div class="timeline-item" role="listitem">
+                <div class="timeline-dot active" title="Cargo atual" aria-label="Emprego atual"></div>
+                <div class="timeline-content current">
+                  <div class="timeline-header">
+                    <span class="timeline-empresa">Tecparts do Brasil Ind Com Ltda.</span>
+                    <span class="timeline-periodo">11/2025 — Atual</span>
+                  </div>
+                  <p class="timeline-cargo">Analista de Infraestrutura de TI</p>
+                  <p class="timeline-local">
+                    📍 Brasil
+                    <span class="badge badge-green" style="margin-left:var(--space-sm)">⬤ &nbsp;Atual</span>
+                  </p>
+                  <p class="timeline-desc">
+                    Administração de servidores Windows Server (Active Directory, GPOs, DNS, DHCP, aplicação de patches
+                    de segurança), suporte e hardening de estações de trabalho, gerenciamento de switches e redes locais
+                    (VLANs, roteamento, monitoramento via SNMP), troubleshooting de conectividade e investigação de
+                    incidentes de rede, análise de logs de sistemas e eventos de rede, documentação de procedimentos
+                    técnicos de segurança.
+                  </p>
+                </div>
+              </div>
+
+              <div class="timeline-item" role="listitem">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                  <div class="timeline-header">
+                    <span class="timeline-empresa">Eletromidia S.A.</span>
+                    <span class="timeline-periodo">11/2024 — 02/2025</span>
+                  </div>
+                  <p class="timeline-cargo">Técnico de Campo</p>
+                  <p class="timeline-local">📍 Brasil</p>
+                  <p class="timeline-desc">
+                    Suporte presencial e remoto para equipamentos corporativos, instalação e configuração de sistemas
+                    operacionais, manutenção preventiva e corretiva de hardware/software, documentação de procedimentos
+                    técnicos.
+                  </p>
+                </div>
+              </div>
+
+              <div class="timeline-item" role="listitem">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                  <div class="timeline-header">
+                    <span class="timeline-empresa">Qintess Tecnologia Ltda.</span>
+                    <span class="timeline-periodo">01/2020 — 12/2024</span>
+                  </div>
+                  <p class="timeline-cargo">Analista Service Desk</p>
+                  <p class="timeline-local">📍 Brasil</p>
+                  <p class="timeline-desc">
+                    Atendimento e triagem de chamados técnicos N1/N2 registrados em ferramenta interna (ServiceNow),
+                    suporte a aplicações corporativas, escalonamento de incidentes críticos conforme critérios de
+                    severidade, gerenciamento de Active Directory e políticas de grupo, mentoria de novos colaboradores
+                    e criação de base de conhecimento.
+                  </p>
+                </div>
+              </div>
+
+              <div class="timeline-item" role="listitem">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                  <div class="timeline-header">
+                    <span class="timeline-empresa">Sage Brasil Software</span>
+                    <span class="timeline-periodo">01/2015 — 12/2017</span>
+                  </div>
+                  <p class="timeline-cargo">Analista de Suporte Técnico</p>
+                  <p class="timeline-local">📍 Brasil</p>
+                  <p class="timeline-desc">
+                    Suporte técnico especializado em ERP Sage X3, análise de logs e identificação de falhas críticas em
+                    sistemas corporativos, resolução de problemas de integração entre sistemas, escalonamento de
+                    incidentes conforme severidade, documentação técnica de ocorrências e treinamento de usuários finais.
+                  </p>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          <div class="fade-in" data-fade style="margin-top:var(--space-4xl)">
+            <div class="section-header">
+              <p class="section-label">// formação acadêmica</p>
+              <h2 class="section-title">Formação <span>Acadêmica</span></h2>
+              <div class="section-divider"></div>
+            </div>
+
+            <div class="edu-list">
+              <div class="edu-item">
+                <p class="edu-curso">Curso Superior de Tecnologia (CST) em Redes de Computadores</p>
+                <p class="edu-instituicao">Gran Faculdade</p>
+                <p class="edu-periodo">02/2026 — 07/2028 <span class="badge badge-amber" style="margin-left:8px">Em andamento</span></p>
+              </div>
+              <div class="edu-item">
+                <p class="edu-curso">Formação em Cloud Computing AWS (AWS re/Start)</p>
+                <p class="edu-instituicao">Escola da Nuvem</p>
+                <p class="edu-periodo">Concluído em 2025</p>
+              </div>
+              <div class="edu-item">
+                <p class="edu-curso">Técnico em Informática</p>
+                <p class="edu-instituicao">FAM — Faculdade de Americana</p>
+                <p class="edu-periodo">Concluído em 2014</p>
+              </div>
+              <div class="edu-item">
+                <p class="edu-curso">Graduação em Tecnologia e Marketing</p>
+                <p class="edu-instituicao">Faculdade Anhanguera Educacional</p>
+                <p class="edu-periodo">Concluído em 2012</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="fade-in" data-fade style="margin-top:var(--space-4xl)">
+            <div class="section-header">
+              <p class="section-label">// perfil</p>
+              <h2 class="section-title">Competências <span>Comportamentais</span></h2>
+              <div class="section-divider"></div>
+            </div>
+            <div class="badges-row" style="margin-top:0">
+              <span class="badge badge-default">Atenção a Detalhes</span>
+              <span class="badge badge-default">Pensamento Analítico</span>
+              <span class="badge badge-default">Comunicação Eficaz</span>
+              <span class="badge badge-default">Trabalho em Equipe</span>
+              <span class="badge badge-default">Proatividade</span>
+              <span class="badge badge-default">Adaptação e Resiliência</span>
+              <span class="badge badge-default">Aprendizado Contínuo</span>
+              <span class="badge badge-default">Orientação para Resultados</span>
+              <span class="badge badge-default">Gestão do Tempo</span>
+            </div>
+          </div>
+
+          <div class="fade-in" data-fade style="margin-top:var(--space-4xl)">
+            <div class="section-header">
+              <p class="section-label">// informações adicionais</p>
+              <h2 class="section-title">Outras <span>Informações</span></h2>
+              <div class="section-divider"></div>
+            </div>
+            <ul class="info-list">
+              <li>Disponibilidade para regime de plantão e escala 12x36</li>
+              <li>Interesse em Cibersegurança, SOC e Blue Team</li>
+              <li>Participação ativa em comunidades técnicas online e eventos de tecnologia</li>
+              <li>CNH categorias A e B</li>
+              <li>Conhecimento em ferramentas de monitoramento e sistemas de tickets (ServiceNow)</li>
+              <li>Inglês — Intermediário (leitura/escrita de documentação técnica)</li>
+            </ul>
+          </div>
+
+        </div>
+      </div>
+    </main>
+
+    <!-- ═══════════════════ SKILLS ═══════════════════ -->
+    <main class="page-view" data-page="skills" id="page-skills">
+      <div class="section">
+        <div class="container">
+
+          <div class="section-header fade-in" data-fade>
+            <p class="section-label">// skills</p>
+            <h1 class="section-title">Stack <span>Técnica</span></h1>
+            <div class="section-divider"></div>
+            <p style="margin-top:var(--space-lg); max-width:560px">
+              Tecnologias, ferramentas e frameworks com os quais tenho experiência prática ou formação —
+              organizados por domínio.
+            </p>
+          </div>
+
+          <div class="cert-featured fade-in" data-fade role="region" aria-label="Certificação em destaque">
+            <div class="cert-badge-large" aria-hidden="true">☁️</div>
+            <div class="cert-featured-info">
+              <p class="cert-featured-issuer">Amazon Web Services</p>
+              <h2 class="cert-featured-title">AWS Certified Cloud Practitioner</h2>
+              <p class="cert-featured-dates">Emitida em Dez 2025 · Válida até Dez 2028</p>
+            </div>
+            <div><span class="cert-featured-tag">★ Certificação Ativa</span></div>
+          </div>
+
+          <div class="section-header fade-in" data-fade>
+            <p class="section-label">// tecnologias</p>
+            <h2 class="section-title">Domínios <span>Técnicos</span></h2>
+            <div class="section-divider"></div>
+          </div>
+
+          <div class="skills-grid fade-in" data-fade style="margin-bottom:var(--space-4xl)">
+            <div class="skill-card">
+              <h3 class="skill-card-title">Cibersegurança &amp; SOC</h3>
+              <div class="skill-pills">
+                <span class="badge badge-default">NIST Cybersecurity Framework</span>
+                <span class="badge badge-default">MITRE ATT&amp;CK</span>
+                <span class="badge badge-default">OWASP Top 10</span>
+                <span class="badge badge-default">SIEM (Sentinel, Splunk)</span>
+                <span class="badge badge-default">EDR/EPP</span>
+                <span class="badge badge-default">IDS/IPS</span>
+                <span class="badge badge-default">Firewall</span>
+                <span class="badge badge-default">WAF</span>
+                <span class="badge badge-default">Gestão de Vulnerabilidades</span>
+                <span class="badge badge-default">IAM / RBAC</span>
+                <span class="badge badge-default">RADIUS / TACACS+</span>
+                <span class="badge badge-default">PKI &amp; Certificados Digitais</span>
+                <span class="badge badge-default">Endpoint Security</span>
+                <span class="badge badge-default">Análise de Logs</span>
+                <span class="badge badge-default">Wireshark</span>
+                <span class="badge badge-default">Ethical Hacking</span>
+              </div>
+            </div>
+            <div class="skill-card">
+              <h3 class="skill-card-title">Redes &amp; Protocolos</h3>
+              <div class="skill-pills">
+                <span class="badge badge-default">TCP/IP</span>
+                <span class="badge badge-default">HTTP/HTTPS</span>
+                <span class="badge badge-default">DNS</span>
+                <span class="badge badge-default">DHCP</span>
+                <span class="badge badge-default">SMTP</span>
+                <span class="badge badge-default">SSH</span>
+                <span class="badge badge-default">VLANs</span>
+                <span class="badge badge-default">Roteamento</span>
+                <span class="badge badge-default">Switches</span>
+                <span class="badge badge-default">Roteadores</span>
+                <span class="badge badge-default">VPN</span>
+                <span class="badge badge-default">SNMP</span>
+                <span class="badge badge-default">Firewall OPNsense</span>
+              </div>
+            </div>
+            <div class="skill-card">
+              <h3 class="skill-card-title">Sistemas Operacionais</h3>
+              <div class="skill-pills">
+                <span class="badge badge-default">Windows Server (AD, GPO)</span>
+                <span class="badge badge-default">Windows 7/10/11</span>
+                <span class="badge badge-default">Linux (Ubuntu, Debian, CentOS)</span>
+                <span class="badge badge-default">Shell Script</span>
+                <span class="badge badge-default">PowerShell</span>
+              </div>
+            </div>
+            <div class="skill-card">
+              <h3 class="skill-card-title">Programação &amp; Automação</h3>
+              <div class="skill-pills">
+                <span class="badge badge-default">Python (pandas, numpy)</span>
+                <span class="badge badge-default">Bash</span>
+                <span class="badge badge-default">SQL</span>
+                <span class="badge badge-default">Git / GitHub</span>
+                <span class="badge badge-default">Docker</span>
+                <span class="badge badge-default">ITIL Foundation</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="section-header fade-in" data-fade>
+            <p class="section-label">// certificações</p>
+            <h2 class="section-title">Cursos &amp; <span>Certificados</span></h2>
+            <div class="section-divider"></div>
+          </div>
+
+          <div class="cert-grid fade-in" data-fade></div>
+
+        </div>
+      </div>
+    </main>
+
+    <!-- ═══════════════════ PROJETOS / EXPERIÊNCIAS RELEVANTES ═══════════════════ -->
+    <main class="page-view" data-page="projetos" id="page-projetos">
+      <div class="section">
+        <div class="container">
+
+          <div class="section-header fade-in" data-fade>
+            <p class="section-label">// experiências relevantes</p>
+            <h1 class="section-title">Projetos &amp; <span>Home Lab</span></h1>
+            <div class="section-divider"></div>
+            <p style="margin-top:var(--space-lg); max-width:560px">
+              Projetos pessoais e ambientes de laboratório usados para aplicar, na prática, conceitos de
+              redes, automação e segurança da informação.
+            </p>
+          </div>
+
+          <div class="projects-grid fade-in" data-fade id="projects-grid" role="list" aria-label="Lista de experiências relevantes"></div>
+
+        </div>
+      </div>
+    </main>
+
+    <!-- ═══════════════════ CONTATO ═══════════════════ -->
+    <main class="page-view" data-page="contato" id="page-contato">
+      <section class="contact-section" aria-label="Contato">
+        <div class="container">
+          <div class="contact-inner fade-in" data-fade style="margin:0 auto">
+            <p class="section-label" style="text-align:center; margin-bottom:var(--space-md)">// contato</p>
+
+            <h1 class="section-title" style="text-align:center; margin-bottom:var(--space-lg); font-size:clamp(2rem, 5vw, 3rem)">
+              Vamos <span>conversar</span>?
+            </h1>
+
+            <div style="display:flex; justify-content:center; align-items:center; gap:var(--space-sm); margin-bottom:var(--space-xl)">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" /><circle cx="12" cy="10" r="3" />
+              </svg>
+              <span style="font-family:var(--font-mono); font-size:0.85rem; color:var(--color-text-muted)">Americana/SP — Brasil</span>
+            </div>
+
+            <p class="contact-subtitle">
+              Objetivo: <strong style="color:var(--color-accent)">Analista de Cibersegurança — SOC N1</strong>.
+              Estou aberto a oportunidades em <strong style="color:var(--color-accent)">SOC</strong>,
+              <strong style="color:var(--color-accent)"> Blue Team</strong>,
+              <strong style="color:var(--color-accent)"> Cloud</strong> e
+              <strong style="color:var(--color-accent)"> Infraestrutura</strong>.
+            </p>
+
+            <div class="contact-links" role="list" aria-label="Formas de contato">
+              <a href="mailto:th.araujo@outlook.com" class="contact-link-btn email" aria-label="Enviar email para Thiago Gomes Araújo" role="listitem">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <rect x="2" y="4" width="20" height="16" rx="2" /><polyline points="2,4 12,13 22,4" />
+                </svg>
+                Email
+              </a>
+
+              <a href="https://www.linkedin.com/in/thiago-gomes-araujo/" class="contact-link-btn linkedin" target="_blank" rel="noopener noreferrer" aria-label="Visitar perfil LinkedIn de Thiago Gomes Araújo" role="listitem">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                  <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" /><rect x="2" y="9" width="4" height="12" /><circle cx="4" cy="4" r="2" />
+                </svg>
+                LinkedIn
+              </a>
+
+              <a href="tel:+5519982036647" class="contact-link-btn phone" aria-label="Ligar para Thiago Gomes Araújo" role="listitem">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z" />
+                </svg>
+                (19) 98203-6647
+              </a>
+
+              <a href="https://github.com/thi-araujo" class="contact-link-btn github" target="_blank" rel="noopener noreferrer" aria-label="Visitar perfil GitHub de Thiago Gomes Araújo" role="listitem">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                  <path d="M12 2C6.477 2 2 6.477 2 12c0 4.418 2.865 8.166 6.839 9.489.5.092.682-.217.682-.482 0-.237-.009-.868-.013-1.703-2.782.604-3.369-1.342-3.369-1.342-.454-1.154-1.11-1.461-1.11-1.461-.908-.62.069-.608.069-.608 1.003.07 1.531 1.03 1.531 1.03.892 1.529 2.341 1.087 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.11-4.555-4.943 0-1.091.39-1.984 1.029-2.683-.103-.253-.446-1.27.098-2.647 0 0 .84-.268 2.75 1.026A9.578 9.578 0 0 1 12 6.836a9.59 9.59 0 0 1 2.504.337c1.909-1.294 2.747-1.026 2.747-1.026.546 1.377.202 2.394.1 2.647.64.699 1.028 1.592 1.028 2.683 0 3.842-2.339 4.687-4.566 4.935.359.309.678.919.678 1.852 0 1.336-.012 2.415-.012 2.743 0 .267.18.578.688.48C19.138 20.163 22 16.418 22 12c0-5.523-4.477-10-10-10z" />
+                </svg>
+                GitHub
+              </a>
+            </div>
+
+            <div class="contact-recruiter-msg" role="note" aria-label="Mensagem para recrutadores">
+              <p style="margin-bottom:var(--space-sm); font-weight:600">💼 Para recrutadores e gestores de TI</p>
+              <p>
+                Tenho disponibilidade para entrevistas e para regime de plantão / escala 12x36, presencial,
+                híbrido ou remoto. Meu foco é em posições de <strong>SOC N1</strong>,
+                <strong> Blue Team</strong>, <strong>Segurança da Informação</strong> ou
+                <strong> Infraestrutura de TI</strong>.
+              </p>
+              <p style="margin-top:var(--space-sm)">
+                Envie uma mensagem diretamente pelo
+                <a href="https://www.linkedin.com/in/thiago-gomes-araujo/" style="color:var(--color-accent); text-decoration:underline" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn de Thiago Gomes Araújo">LinkedIn</a>
+                ou pelo
+                <a href="mailto:th.araujo@outlook.com" style="color:var(--color-accent); text-decoration:underline" aria-label="Email de Thiago Gomes Araújo">email</a>.
+                Veja também meus projetos no
+                <a href="https://github.com/thi-araujo" style="color:var(--color-accent); text-decoration:underline" target="_blank" rel="noopener noreferrer" aria-label="GitHub de Thiago Gomes Araújo">GitHub</a>.
+              </p>
+            </div>
+
+            <div style="margin-top:var(--space-2xl); display:flex; justify-content:center">
+              <span class="badge badge-green" style="padding:8px 20px; font-size:0.8rem">
+                <span class="pulse-dot-inline"></span>
+                [ Disponível para oportunidades ]
+              </span>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- ═══════════════════ FOOTER ═══════════════════ -->
+    <footer class="footer">
+      <div class="container">
+        <p>
+          <span>©</span> <span id="footer-year"></span>&nbsp;
+          <span>Thiago Gomes Araújo</span>
+          &nbsp;—&nbsp;
+          Analista de Cibersegurança · SOC N1
+          &nbsp;·&nbsp;
+          Americana/SP, Brasil
+        </p>
+      </div>
+    </footer>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
