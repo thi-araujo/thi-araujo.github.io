@@ -871,8 +871,8 @@ code, .mono { font-family: var(--font-mono); font-size: 0.875em; }
 .contact-link-btn.linkedin { background: transparent; border-color: #0077b5; color: #0ea5e9; }
 .contact-link-btn.linkedin:hover { background: rgba(14, 165, 233, 0.1); transform: translateY(-2px); }
 
-.contact-link-btn.phone { background: transparent; border-color: var(--color-border); color: var(--color-text-primary); }
-.contact-link-btn.phone:hover { border-color: var(--color-border-hover); background: var(--color-bg-card); transform: translateY(-2px); }
+.contact-link-btn.whatsapp { background: transparent; border-color: #25d366; color: #25d366; }
+.contact-link-btn.whatsapp:hover { background: rgba(37, 211, 102, 0.1); transform: translateY(-2px); }
 
 .contact-link-btn.github { background: transparent; border-color: var(--color-border); color: var(--color-text-primary); }
 .contact-link-btn.github:hover { border-color: var(--color-border-hover); background: var(--color-bg-card); transform: translateY(-2px); }
