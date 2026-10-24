@@ -55,7 +55,7 @@ const PROJETOS = [
     stack: ["Django", "SQLite", "Bootstrap 5", "Plotly", "Chart.js"],
     status: "Em desenvolvimento",
     statusType: "active",
-    github: "#",
+    github: "https://github.com/thi-araujo/itsm-enterprise",
   },
   {
     nome: "Windows Toolkit",
@@ -64,7 +64,6 @@ const PROJETOS = [
     stack: ["Python", "CustomTkinter", "PowerShell", "WMI"],
     status: "Concluído",
     statusType: "done",
-    github: "#",
   },
   {
     nome: "NET ADMIN PRO",
@@ -73,7 +72,6 @@ const PROJETOS = [
     stack: ["Python", "CustomTkinter", "SQLite", "Nmap"],
     status: "Concluído",
     statusType: "done",
-    github: "#",
   },
   {
     nome: "Home Lab — AD + File Server",
@@ -81,8 +79,7 @@ const PROJETOS = [
       "Lab Hyper-V com Domain Controller (araujo.corp), File Server com 5 volumes via passthrough, GPOs de logon e drives, RDP/NLA e OPNsense router-on-a-stick com VLANs.",
     stack: ["Hyper-V", "Windows Server", "OPNsense", "Active Directory"],
     status: "Concluído",
-    statusType: "active",
-    github: "#",
+    statusType: "done",
   },
 ];
 
