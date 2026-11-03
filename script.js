@@ -10,14 +10,25 @@ const CERTIFICACOES = [
   { badge: "🛡️", nome: "Especialização em Blue Team", emissor: "Hackers do Bem", data: "Em andamento", emAndamento: true },
   { badge: "🔰", nome: "Hackers do Bem — Nivelamento (80h) + Básico (64h)", emissor: "RNP", data: "08/2025" },
   { badge: "🎓", nome: "Cybersecurity (120h)", emissor: "FIAP", data: "08/2025" },
-  { badge: "🌐", nome: "Introdução à Cibersegurança, Conceitos Básicos de Redes, Dispositivos de Rede e Configuração Inicial, Segurança de Endpoint", emissor: "Cisco Networking Academy", data: "09/2025" },
-  { badge: "🚀", nome: "AWS re/Start Graduate", emissor: "Escola da Nuvem", data: "01/2026" },
   { badge: "☁️", nome: "Cloud Fundamentals, Administration and Solution Architect (80h)", emissor: "FIAP", data: "08/2025" },
   { badge: "⚙️", nome: "DevOps & Agile Culture (60h)", emissor: "FIAP", data: "09/2025" },
   { badge: "🐧", nome: "Linux Fundamentals (40h)", emissor: "FIAP", data: "08/2025" },
   { badge: "🐍", nome: "Python Development (80h)", emissor: "FIAP", data: "08/2025" },
   { badge: "🧩", nome: "Engenharia de Software (100h)", emissor: "FIAP", data: "08/2025" },
   { badge: "🗣️", nome: "Inglês Intermediário", emissor: "Microcamp", data: "2015" },
+];
+
+const MEDALHAS = [
+  { nome: "AWS Certified Cloud Practitioner", emissor: "Amazon Web Services", data: "Válida até 12/2028", imagem: "aws-cloud-practitioner.png", url: "https://www.credly.com/badges/3614f8d6-2bbd-4b4d-b49a-b04eed9681b8/public_url" },
+  { nome: "AWS re/Start Graduate", emissor: "Amazon Web Services", data: "Emitida em 11/2025", imagem: "aws-restart-graduate.png", url: "https://www.credly.com/badges/7fa98bc2-f4e8-40a7-87d4-9a9a9a54a335/public_url" },
+  { nome: "Cyber Threat Management", emissor: "Cisco", data: "Emitida em 11/2026", imagem: "cisco-cyber-threat-management.png", url: "https://www.credly.com/badges/19e0ca9c-624b-4a24-a3e0-31a9d7f06647/public_url" },
+  { nome: "Digital Safety and Security Awareness", emissor: "Cisco", data: "Emitida em 10/2026", imagem: "cisco-digital-safety.png", url: "https://www.credly.com/badges/3f4b891f-62dd-4481-8385-5256929d4f83/public_url" },
+  { nome: "Endpoint Security", emissor: "Cisco", data: "Emitida em 08/2025", imagem: "cisco-endpoint-security.png", url: "https://www.credly.com/badges/d1c47d38-f47f-475f-b719-3520048bf31e/public_url" },
+  { nome: "Introduction to Cybersecurity", emissor: "Cisco", data: "Emitida em 09/2025", imagem: "cisco-intro-cybersecurity.png", url: "https://www.credly.com/badges/b35c5f55-2882-4490-baa8-0453818bc95e/public_url" },
+  { nome: "Junior Cybersecurity Analyst Career Path", emissor: "Cisco", data: "Emitida em 11/2026", imagem: "cisco-junior-cybersecurity-analyst.png", url: "https://www.credly.com/badges/bfa66503-e490-41ae-be5a-9e8b0acf00d3/public_url" },
+  { nome: "Network Defense", emissor: "Cisco", data: "Emitida em 04/2026", imagem: "cisco-network-defense.png", url: "https://www.credly.com/badges/45715cf2-efcb-4865-b3c0-212c9c376d4a/public_url" },
+  { nome: "Networking Basics", emissor: "Cisco", data: "Emitida em 09/2025", imagem: "cisco-networking-basics.png", url: "https://www.credly.com/badges/dd2dce9b-ea4e-4451-8642-72a3a961d9bd/public_url" },
+  { nome: "Networking Devices and Initial Configuration", emissor: "Cisco", data: "Emitida em 09/2025", imagem: "cisco-networking-devices.png", url: "https://www.credly.com/badges/8f1c2d57-a488-4482-bc51-dc18bc189483/public_url" },
 ];
 
 const PROJETOS = [
@@ -160,6 +171,20 @@ function renderCertifications() {
       </div>
     `;
   }).join("");
+}
+
+function renderMedalhas() {
+  const grid = document.getElementById("medal-grid");
+  if (!grid) return;
+
+  grid.innerHTML = MEDALHAS.map((medalha) => `
+    <a href="${medalha.url}" class="medal-card" role="listitem" target="_blank" rel="noopener noreferrer" aria-label="Verificar medalha ${medalha.nome} no Credly">
+      <img class="medal-card-imagem" src="medalhas/${medalha.imagem}" alt="" width="96" height="96" loading="lazy" />
+      <p class="cert-card-nome">${medalha.nome}</p>
+      <p class="cert-card-emissor">${medalha.emissor}</p>
+      <p class="cert-card-data">${medalha.data}</p>
+    </a>
+  `).join("");
 }
 
 // ------------------------------------------------------------
@@ -308,6 +333,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   renderProjects();
   renderCertifications();
+  renderMedalhas();
   setupMobileMenu();
   setupTyping();
 

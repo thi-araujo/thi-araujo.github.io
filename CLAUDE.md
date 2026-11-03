@@ -8,7 +8,7 @@ Portfólio pessoal estático (Thiago Gomes Araújo, cibersegurança / SOC N1), p
 
 Todo o texto visível, comentários e identificadores estão em **português do Brasil** — mantenha novos conteúdos e nomes no mesmo padrão (`PROJETOS`, `CERTIFICACOES`, `descricao`, `emAndamento`, etc.).
 
-O site inteiro são três arquivos: `index.html`, `style.css`, `script.js`.
+O site são três arquivos (`index.html`, `style.css`, `script.js`) mais as imagens em `medalhas/`.
 
 ## Executando localmente
 
@@ -26,9 +26,10 @@ Esta pasta é um clone de `https://github.com/thi-araujo/thi-araujo.github.io` (
 
 **SPA com roteamento por hash.** `index.html` contém todas as páginas como blocos `<main class="page-view" data-page="...">` (`home`, `sobre`, `skills`, `projetos`, `contato`). `script.js` lê `location.hash` (`#/home`, `#/sobre`, …), alterna a classe `.active` no `.page-view` e no `.nav-link[data-route]` correspondentes, e cai em `home` para hashes desconhecidos. Adicionar uma página exige três coisas: um novo bloco `page-view` no HTML, um link de navegação com `data-route` e o nome da rota em `VALID_ROUTES` no `script.js`.
 
-**Seções guiadas por dados.** Projetos e certificações não ficam no HTML — são os arrays `PROJETOS` e `CERTIFICACOES` no topo do `script.js`, renderizados em `#projects-grid`, `#home-projects-preview` (os 3 primeiros projetos) e `#page-skills .cert-grid`. Para mudar esse conteúdo, edite os arrays.
+**Seções guiadas por dados.** Projetos, certificações e medalhas não ficam no HTML — são os arrays `PROJETOS`, `CERTIFICACOES` e `MEDALHAS` no topo do `script.js`, renderizados em `#projects-grid`, `#home-projects-preview` (os 3 primeiros projetos), `#page-skills .cert-grid` e `#medal-grid`. Para mudar esse conteúdo, edite os arrays.
 - Projeto: `periodo` e `github` são opcionais; `statusType: "active"` gera badge âmbar, qualquer outro valor gera badge verde "concluído". O texto do badge vem de `status`.
 - Certificação: `emAndamento: true` adiciona o badge "Em andamento".
+- Medalha: `imagem` é o nome do arquivo em `medalhas/` e `url` é a página de verificação no Credly (`https://www.credly.com/badges/<id>/public_url`). Quem aparece em `MEDALHAS` não se repete em `CERTIFICACOES`. Perfil público: `https://www.credly.com/users/thiago-araujo.af7d51d1` (a lista com os ids está no mesmo endereço, em `/badges.json`).
 - Os valores são interpolados direto em `innerHTML` — não use `<`/`&` crus nos textos.
 
 O restante (experiência, formação, skills, contato, certificação em destaque, métricas da home, palavras do efeito de digitação em `data-words` do `#typing-text`) é marcação estática no `index.html`.
