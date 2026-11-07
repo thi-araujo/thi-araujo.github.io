@@ -8,7 +8,7 @@ Portfólio pessoal estático (Thiago Gomes Araújo, cibersegurança / SOC N1), p
 
 Todo o texto visível, comentários e identificadores estão em **português do Brasil** — mantenha novos conteúdos e nomes no mesmo padrão (`PROJETOS`, `CERTIFICACOES`, `descricao`, `emAndamento`, etc.).
 
-O site são três arquivos (`index.html`, `style.css`, `script.js`) mais as imagens em `medalhas/`.
+O site são três arquivos (`index.html`, `style.css`, `script.js`) mais as imagens: `foto-perfil.jpg` (avatar da home, a mesma foto do perfil no GitHub) e `medalhas/`.
 
 ## Executando localmente
 
