@@ -22,6 +22,8 @@ python -m http.server 8000
 
 Esta pasta é um clone de `https://github.com/thi-araujo/thi-araujo.github.io` (remote `origin`, branch `main`). O GitHub Pages serve a raiz da `main`, então **todo `git push` vai ao ar em ~1 minuto** — commit e push só quando o usuário pedir. `.idea/` (PyCharm) fica fora do git via `.gitignore`.
 
+**Cache:** o GitHub Pages manda o navegador guardar CSS/JS por 10 minutos, então o HTML novo pode rodar com o CSS antigo (já deixou a foto do avatar esticada). Por isso `index.html` carrega `style.css?v=AAAAMMDD` e `script.js?v=AAAAMMDD` — **ao mudar `style.css` ou `script.js`, troque o `?v=` dos dois pela data do dia** antes do commit.
+
 ## Arquitetura
 
 **SPA com roteamento por hash.** `index.html` contém todas as páginas como blocos `<main class="page-view" data-page="...">` (`home`, `sobre`, `skills`, `projetos`, `contato`). `script.js` lê `location.hash` (`#/home`, `#/sobre`, …), alterna a classe `.active` no `.page-view` e no `.nav-link[data-route]` correspondentes, e cai em `home` para hashes desconhecidos. Adicionar uma página exige três coisas: um novo bloco `page-view` no HTML, um link de navegação com `data-route` e o nome da rota em `VALID_ROUTES` no `script.js`.

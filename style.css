@@ -439,13 +439,13 @@ code, .mono { font-family: var(--font-mono); font-size: 0.875em; }
 /* Avatar */
 .avatar-wrapper {
   position: relative;
-  width: 180px; height: 180px;
+  width: 200px; height: 200px;
   flex-shrink: 0;
   margin-inline: auto;
 }
 
 @media (min-width: 768px) {
-  .avatar-wrapper { width: 200px; height: 200px; }
+  .avatar-wrapper { width: 230px; height: 230px; }
 }
 
 .avatar-ring {
