@@ -893,6 +893,9 @@ code, .mono { font-family: var(--font-mono); font-size: 0.875em; }
 .contact-link-btn.whatsapp { background: transparent; border-color: #25d366; color: #25d366; }
 .contact-link-btn.whatsapp:hover { background: rgba(37, 211, 102, 0.1); transform: translateY(-2px); }
 
+.contact-link-btn.telegram { background: transparent; border-color: #26a5e4; color: #26a5e4; }
+.contact-link-btn.telegram:hover { background: rgba(38, 165, 228, 0.1); transform: translateY(-2px); }
+
 .contact-link-btn.github { background: transparent; border-color: var(--color-border); color: var(--color-text-primary); }
 .contact-link-btn.github:hover { border-color: var(--color-border-hover); background: var(--color-bg-card); transform: translateY(-2px); }
 
