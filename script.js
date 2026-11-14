@@ -77,7 +77,7 @@ const PROJETOS = [
     statusType: "done",
   },
   {
-    nome: "NET ADMIN PRO",
+    nome: "NET IP SCANNER",
     descricao:
       "Scanner de rede para aplicação web em FastAPI e Docker, publicada atrás do Traefik com HTTPS por CA interna. Varre 3 sub-redes (~760 hosts em ~20 s) identificando MAC, fabricante (OUI), portas e tipo de dispositivo, com o MAC das outras redes pela API do OPNsense. Mostra usuário logado e inventário via WinRM (conta de serviço sem admin) e tem terminal SSH no navegador, RDP, Wake-on-LAN, pastas compartilhadas e histórico em SQLite com alerta de dispositivos novos. Login com argon2, CSRF, rate limit e acesso restrito à rede de gerência.",
     stack: ["Python", "FastAPI", "Docker", "Traefik", "SQLite", "WinRM", "OPNsense API"],
